@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edytor canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <canvas id="canvas"></canvas>
+            <!-- płótno odpowiedzialne za zdjęcia -->
+            <canvas id="draw"></canvas>
+            <!-- płótno odpowiedzialne za malowanie -->
+            <!-- oba canvasy powstały wstępnie w dwóch różnych projektach, potem je połączyłem. Być może działało by to najednym canvasie, jednak tego nie sprawdziłem, bo wszystkie funkcje aplikacji działają tak jak jest -->
+        </div>
+        <div>
+            <div class="singleButtons">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label class="btn-btn-default">
+                        <div class="fa fa-upload fa-2x add">dodaj obraz</div>
+                        <input id="upload-file" class="file-upload" type="file" accept="image/*" />
+                    </label>
+                </div>
+            </div>
+            <div class="singleButtons" id="download-btn">ZAPISZ OBRAZ</div>
+            <div class="filterButtons">
+                <div class="filterGroup">
+                    <button class="pluses" id="brightness-dec">-</button>
+                    <span class="filterName">JASNOŚĆ</span>
+                    <button class="pluses" id="brightness-inc">+</button>
+                    <button class="pluses" id="contrast-dec" class="disabled">-</button>
+                    <span class="filterName">KONTRAST</span>
+                    <button class="pluses" id="contrast-inc">+</button>
+                </div>
+                <div class="filterGroup">
+                    <button class="pluses" id="saturation-dec">-</button>
+                    <span class="filterName">NASYCENIE</span>
+                    <button class="pluses" id="saturation-inc">+</button>
+                    <button class="pluses" id="sepia-dec">-</button>
+                    <span class="filterName">SEPIA</span>
+                    <button class="pluses" id="sepia-inc">+</button>
+                </div>
+            </div>
+            <div class="singleButtons">
+                <button class="btnEffects" id="nostalgia-btn">NOSTALGIA</button>
+                <button class="btnEffects" id="vintage-btn">VINTAGE</button>
+                <button class="btnEffects" id="sinCity-btn">SIN CITY</button>
+            </div>
+            <div class="filterGroup">
+                <span class="filterName">ROZMYCIE</span>
+                <button class="pluses" id="blur-inc">+</button>
+                <button class="pluses inactive">-</button>
+                <span class="filterName">ZIARNO</span>
+                <button class="pluses" id="noise-inc">+</button>
+            </div>
+            <div class="filterGroup">
+                <input id="hex" placeholder="tu wpisz kolor hex pędzla"></input>
+                <!-- zmiana koloru pędzla -->
+                <div class="colors">
+                    #FFFFFF---->BIAŁY #000000---->CZARNY <br>#FF0000-->CZERWONY #FFFF00-->ŻÓŁTY <br>#008000-->ZIELONY
+                    #0000FF->NIEBIESKI<br>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- link do jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <!-- link do biiblioteki CamanJS- (ca)nvas (man)ipulation in JavaScript(JS) -->
+    <script src="main.js"></script>
+</body>
+
+</html>

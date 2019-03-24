@@ -1,0 +1,118 @@
+html {
+	font-size: 16px;
+	background: url(https://ak6.picdn.net/shutterstock/videos/11172938/thumb/1.jpg) bottom center;
+    background-size: cover;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', arial, sans-serif;
+}
+.wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 1vh;
+}
+.singleButtons {
+	background-color: rgba(10, 178, 245, 0.486);
+	border: .1rem solid black;
+	padding: .5rem;
+	margin: .5rem;
+	width: 22rem;
+	color: black;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-align: center;
+}
+.singleButtons:hover {
+    border: .1rem solid white;
+    background-color: rgba(10, 178, 245, 0.856);
+}
+.filterGroup {
+	background-color: rgba(10, 178, 245, 0.486);
+	border: .1rem solid black;
+	padding: .5rem;
+	margin: .5rem;
+	width: 22rem;
+	color: black;
+	letter-spacing: 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-align: center;
+}
+.filterGroup:hover {
+	border: .1rem solid white;
+    cursor: default;
+    background-color: rgba(10, 178, 245, 0.856);
+}
+.filterName {
+	font-size: .9rem;
+}
+#canvas {
+	cursor: crosshair;
+}
+.colors {
+	text-align: center;
+	font-size: .6rem;
+	letter-spacing: 2px;
+}
+#hex {
+	background-color: rgba(10, 178, 245, 0);
+	border: none;
+	font-size: .9rem;
+}
+input::-webkit-input-placeholder {
+	color: black;
+}
+input:-ms-input-placeholder {
+	color: black;
+}
+input::placeholder {
+	color: black;
+}
+#download-btn {
+	letter-spacing: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btnEffects {
+	background-color: rgba(10, 178, 245, 0.705);
+	border: none;
+	padding: 1 rem;
+	letter-spacing: 2px;
+	border: .1rem solid black;
+	margin-top: .3rem;
+	margin-bottom: .3rem;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	width: 6.6rem;
+}
+.btnEffects:hover {
+    border: .1rem solid white;
+    cursor: pointer;
+}
+.file-upload {
+	display: none;
+}
+.pluses {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .2rem;
+    width: 1.5rem;
+    -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.pluses:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.inactive {
+   visibility: hidden;
+   }
+
+.add {
+    cursor: pointer;
+}
